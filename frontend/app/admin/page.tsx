@@ -76,7 +76,7 @@ export default function AdminPage() {
             // No stored user — try to fetch from API
             const fetchMe = async () => {
                 try {
-                    const apiUrl = '/api/v1'
+                    const apiUrl = process.env.NEXT_PUBLIC_API_URL
                     const res = await fetch(`${apiUrl}/auth/me`, {
                         headers: { Authorization: `Bearer ${token}` }
                     })
