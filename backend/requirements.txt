@@ -22,10 +22,6 @@ pydantic-settings==2.1.0
 pydantic_core==2.14.5
 python-dotenv==1.0.0
 
-# Elasticsearch
-elasticsearch==8.11.0
-elastic-transport==8.17.1
-
 # Data Processing (ETL scripts)
 pandas==2.1.3
 numpy==1.26.4
