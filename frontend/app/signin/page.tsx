@@ -19,7 +19,7 @@ export default function SignInPage() {
     setError('')
 
     try {
-      const apiUrl = '/api/v1'
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
       const formData = new URLSearchParams()
       formData.append('username', username)
