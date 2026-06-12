@@ -12,7 +12,7 @@ export default function FavoritesPage() {
   const [loadingGenes, setLoadingGenes] = useState(false)
   const [loadingDiseases, setLoadingDiseases] = useState(false)
 
-  const apiUrl = '/api/v1'
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
   useEffect(() => {
     const genes = JSON.parse(localStorage.getItem('fav_genes') || '[]')
