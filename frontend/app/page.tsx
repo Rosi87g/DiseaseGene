@@ -135,7 +135,7 @@ export default function Home() {
                 <s.icon className="w-4 h-4 transition-colors" style={{ color: 'rgba(0,245,212,0.3)' }} />
               </div>
               <div className="font-mono font-bold text-xl tracking-tight" style={{ color: '#f0f0f8' }}>
-                {s.value.toLocaleString()}
+                {(s.value ?? 0).toLocaleString()}
               </div>
               <p className="text-[9px] font-mono mt-1" style={{ color: '#5a5f78' }}>{s.desc}</p>
             </div>
