@@ -25,7 +25,7 @@ export default function AdminPage() {
     const fetchOverview = async () => {
         setIsRefreshing(true)
         try {
-            const apiUrl = '/api/v1'
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL
             const token = getToken()
             
             // Try admin endpoint first, fall back to public stats
@@ -97,7 +97,7 @@ export default function AdminPage() {
 
     const saveProfile = async () => {
         try {
-            const apiUrl = '/api/v1'
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL
             const token = getToken()
             const response = await fetch(`${apiUrl}/admin/profile`, {
                 method: 'PUT',
