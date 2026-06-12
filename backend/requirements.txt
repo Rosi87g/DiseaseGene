@@ -37,4 +37,5 @@ typing_extensions==4.15.0
 anyio==3.7.1
 email-validator==2.1.0.post1
 
+elasticsearch==8.11.0
 sib-api-v3-sdk
