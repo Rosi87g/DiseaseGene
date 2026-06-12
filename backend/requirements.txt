@@ -19,8 +19,6 @@ cryptography==47.0.0
 # Settings & Config
 pydantic==2.5.2
 pydantic-settings==2.1.0
-pydantic_core==2.14.5
-python-dotenv==1.0.0
 
 # Data Processing (ETL scripts)
 pandas==2.1.3
